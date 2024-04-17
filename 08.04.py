@@ -28,7 +28,7 @@ while not cracked:
                     if code[0] == secret_code[0] and code[1] == secret_code[1] and code[2] == secret_code[2] and code[
                         3] == \
                             secret_code[3]:
-                        print(f"\nKodas nulauztas!\nKodas yra: {code}\n")
+                        print(f"\nCode cracked!\n\nCode is: {code}\n")
                         cracked = True
                         break
                 if cracked:

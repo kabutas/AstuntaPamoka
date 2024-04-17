@@ -4,7 +4,7 @@ while 1:
     test_username = input("Enter username: ")
     test_password = input("Enter password: ")
     if username == test_username and password == test_password:
-        print("Sveiki, jus prisijungete prie matricos")
+        print("Sveiki, jus prisijungete prie Matricos")
         break
     else:
         print("\nBandykite dar karta!\n")
