@@ -13,7 +13,7 @@ cracked = False
 print("\nPin Code Cracker")
 
 print(f"Secret code = {secret_code}")
-
+start_time = time.time()
 while not cracked:
     for i in range(10):
         code[0] = i
@@ -26,7 +26,8 @@ while not cracked:
                     time.sleep(.001)
                     print(f"Trying code: {code}")
 
-                    if code[0] == secret_code[0] and code[1] == secret_code[1] and code[2] == secret_code[2] and code[3] == \
+                    if code[0] == secret_code[0] and code[1] == secret_code[1] and code[2] == secret_code[2] and code[
+                        3] == \
                             secret_code[3]:
                         print(f"\nKodas nulauztas!\nKodas yra: {code}\n")
                         cracked = True
@@ -40,4 +41,8 @@ while not cracked:
     if cracked:
         break
         # print(f"Trying code {i}")
+end_time = time.time()
+
+
+print(f"Nulauzeme per {round(end_time - start_time, 2)} sekundes")
 # break
