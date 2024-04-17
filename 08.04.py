@@ -25,7 +25,6 @@ while not cracked:
                     code[3] = l
                     time.sleep(.001)
                     print(f"Trying code: {code}")
-
                     if code[0] == secret_code[0] and code[1] == secret_code[1] and code[2] == secret_code[2] and code[
                         3] == \
                             secret_code[3]:
@@ -40,9 +39,9 @@ while not cracked:
             break
     if cracked:
         break
-        # print(f"Trying code {i}")
+
 end_time = time.time()
 
 
-print(f"Nulauzeme per {round(end_time - start_time, 2)} sekundes")
-# break
+print(f"Code cracked in {round(end_time - start_time, 2)} seconds")
+
