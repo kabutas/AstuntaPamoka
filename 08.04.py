@@ -11,8 +11,8 @@ for i in range(4):
     secret_code.append(random.randint(0, 9))
 cracked = False
 print("\nPin Code Cracker")
-
-print(f"Secret code = {secret_code}")
+input("\nEnter to start cracker")
+# print(f"Secret code = {secret_code}")
 start_time = time.time()
 while not cracked:
     for i in range(10):
@@ -45,3 +45,5 @@ end_time = time.time()
 
 print(f"Code cracked in {round(end_time - start_time, 2)} seconds")
 
+
+input()
