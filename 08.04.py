@@ -1,10 +1,6 @@
 import random
 import time
 
-# Create a pin code cracker.
-# Let's say pin code consists of 4 random digits.
-# You can store the value in variable.
-# Then create a loop going through all possible combinations until you find the one you entered.
 secret_code = []
 code = [0, 0, 0, 0]
 for i in range(4):
